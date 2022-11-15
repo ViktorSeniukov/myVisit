@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <title>WTF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="hero-title">WTF<span class="span-media">media</span></h1>
+      <section class="section-list">
+        <div class="add-new-card">
+          <form class="add-new-card-form" id="form">
+            <fieldset class="fieldset">
+              <legend class="legend">What should I write on a new card?</legend>
+              <label class="label">Write name:
+                <input class="input" type="text" id="input-name">
+              </label>
+              <label class="label">Write title:
+                <input class="input" type="text" id="input-title" required>
+              </label>
+              <label class="label">Write text:
+                <textarea class="input textarea" type="text" cols="10" rows="5" id="input-text"></textarea>
+              </label>
+            </fieldset>
+            <button type="submit" class="circle" id="button" disabled></button>
+          </form>
+        </div>
+
+        <ul class="cards-list">
+          <li class="card-item">
+            <p class="card-name">Viktor</p>
+            <h2 class="card-title">Biiiiig</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repudiandae molestiae cum rerum, quis doloremque nobis voluptate molestias enim, blanditiis libero odit debitis architecto. Necessitatibus architecto harum in quod provident?</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

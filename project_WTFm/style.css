@@ -1,0 +1,229 @@
+body {
+  background-color: rgb(255, 94, 252);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #2D344D;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 75px;
+  text-align: center;
+  color: #FCFCFC;
+  position: relative;
+  text-shadow: 3px 2px 5px #2D344D;
+}
+
+.span-media {
+  color: rgb(255, 94, 252);
+  font-size: 55px;
+  text-shadow: -0   -1px 0   #FCFCFC,
+		 0   -1px 0   #FCFCFC,
+		-0    1px 0   #FCFCFC,
+		 0    1px 0   #FCFCFC,
+		-1px -0   0   #FCFCFC,
+		 1px -0   0   #FCFCFC,
+		-1px  0   0   #FCFCFC,
+		 1px  0   0   #FCFCFC,
+		-1px -1px 0   #FCFCFC,
+		 1px -1px 0   #FCFCFC,
+		-1px  1px 0   #FCFCFC,
+		 1px  1px 0   #FCFCFC,
+		-1px -1px 0   #FCFCFC,
+		 1px -1px 0   #FCFCFC,
+		-1px  1px 0   #FCFCFC,
+		 1px  1px 0   #FCFCFC,
+     3px 2px 4px #2D344D;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 30px);
+}
+
+.section-list {
+  margin-top: 25px;
+  /* display: grid; */
+  /* grid-template-columns: 415px 1fr; */
+  /* column-gap: 15px; */
+}
+
+.cards-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  /* grid-template-columns: repeat(4, 230px); */
+  gap: 26.666px;
+}
+
+.card-item {
+  width: 230px;
+  height: fit-content;
+  min-height: 70px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: rgba(233, 233, 233, .5);
+  border-radius: 10px;
+}
+
+.add-new-card {
+  padding: 15px;
+  background-color: rgba(233, 233, 233, .4);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 385px;
+  /* align-self: baseline; */
+}
+
+.add-new-card-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textarea {
+  resize: none;
+}
+
+.legend {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.label {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.input {
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #FCFCFC;
+  margin-top: 5px;
+  max-width: 397.56px;
+  box-sizing: border-box;
+}
+
+.input:hover {
+  outline: .3px solid #FCFCFC;
+}
+
+.input:focus {
+  outline: 1px solid #FCFCFC;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(233, 233, 233, .7);
+  background-color: transparent;
+  position: relative;
+  align-self: center;
+  /* margin-left: 15px; */
+}
+
+.circle::before, .circle::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(233, 233, 233, .7);
+  top: 50%;
+  left: 50%;
+}
+
+.circle:hover {
+  border-color: rgb(233, 233, 233);
+}
+
+.circle:hover::after {
+  background-color: rgb(233, 233, 233);
+}
+
+.circle:hover::before {
+  background-color: rgb(233, 233, 233);
+}
+
+.circle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.circle::before {
+  transform: translate(-50%, -50%);
+}
+
+.circle:active {
+  background-color: #FCFCFC;
+  border-color: #FCFCFC;
+}
+
+.circle:active:before, .circle:active:after {
+  background-color: #2D344D;
+}
+
+.circle:focus-visible {
+  background-color: #FCFCFC;
+  border-color: #2D344D;
+  outline: none;
+}
+
+.circle:focus-visible::before, .circle:focus-visible::after {
+  background-color: #2D344D;
+}
+
+.circle:disabled {
+  border-color: rgb(255, 121, 121);
+}
+
+.circle:disabled:hover {
+  background-color: rgba(255, 0, 0, .1);
+  border-color: rgb(255, 92, 92);
+}
+
+.circle:disabled::before, .circle:disabled::after {
+  background-color: rgb(255, 121, 121);
+}
+
+.circle:disabled:hover:before, .circle:disabled:hover:after {
+  background-color: rgb(255, 92, 92);
+}
+
+.card-name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-style: italic;
+  text-align: right;
+}
+
+.card-title {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.card-text {
+  margin: 0;
+  margin-top: 6px;
+  word-wrap: break-word;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #2D344D;
+}

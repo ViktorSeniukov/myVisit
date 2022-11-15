@@ -90,14 +90,14 @@
     display: inline;
   }
 
-  .projects {
+  /* .projects {
     max-height: 360px;
     overflow-x: scroll;
   }
   .project-item {
     width: 300px;
     margin: 0 auto;
-  }
+  } */
   header {
     align-items: stretch;
   }
