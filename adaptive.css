@@ -91,9 +91,8 @@
   }
 
   .projects {
-    max-height: 350px;
+    max-height: 360px;
     overflow-x: scroll;
-    padding: 10px;
   }
   .project-item {
     width: 300px;
