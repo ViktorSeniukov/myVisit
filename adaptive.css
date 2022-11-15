@@ -98,9 +98,125 @@
     width: 300px;
     margin: 0 auto;
   }
+  header {
+    align-items: stretch;
+  }
+  #about-me p {
+    max-width: 285px;
+  }
+  #skills img {
+    width: 120px;
+    height: 120px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  #contacts li {
+    flex-direction: column;
+  }
+  #contacts img {
+    margin: 0 0 15px 0;
+  }
+  #contacts a {
+    font-size: 14px;
+  }
+  #contacts ul {
+    gap: 20px 20px;
+    grid-template-columns: 190px 190px;
+  }
+  #about-me div {
+    width: 135px;
+    height: 135px;
+  }
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-me div {
+    margin: 0 0 25px 0;
+  }
+  #about-me .title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #contacts a {
+    font-size: 13px;
+  }
+  #contacts ul {
+    gap: 20px 10px;
+    grid-template-columns: 150px 150px;
+  }
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
+@media only screen and (max-width: 365px) {
+  #skills .skills-scroll {
+    overflow-x: scroll;
+    padding: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 12px;
+    min-width: 100px;
+    justify-content: flex-start;
+  }
+  header img {
+    max-width: 70px;
+  }
+  #skills-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  /* #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-me div {
+    margin: 0 0 25px 0;
+  }
+  #about-me .title {
+    text-align: center;
+  } */
+  .title {
+    font-size: 27px;
+  }
+  #about-me .title {
+    font-size: 30px;
+    margin-bottom: 7px;
+  }
+  #projects h4 {
+    font-size: 16px;
+  }
+  #contacts img {
+    width: 40px;
+    height: 40px;
+  }
+  #contacts ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer ul li h5 {
+    font-size: 10px;
+  }
+  #footer ul li a {
+    font-size: 10px;
+  }
+  #contacts h1 {
+    margin: 20px 0 60px 0;
+  }
+  #skills img {
+    margin: 0;
+  }
+  #skills-item {
+    margin: 0 auto;
+  }
+  #skills span {
+    /* margin-bottom: 50px; */
+    text-align: center;
+  }
 }
