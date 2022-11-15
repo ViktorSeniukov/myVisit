@@ -63,7 +63,7 @@
     width: 140px;
     height: 140px;
   }
-  #projects h4 {
+  #projects h3 {
     font-size: 19px;
   }
   #contacts img {
@@ -88,6 +88,15 @@
   }
   .hamburger-menu {
     display: inline;
+  }
+
+  .projects {
+    max-height: 350px;
+    overflow-x: scroll;
+  }
+  .project-item {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 
